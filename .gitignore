@@ -171,3 +171,5 @@ models/
 # FastAPI
 fastapi.db
 fastapi.test.db
+
+__init__.py
