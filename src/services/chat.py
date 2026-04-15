@@ -1,16 +1,16 @@
 
-from services.ollama_ai_model import ask_ollama
+from .ollama_ai_model import ask_ollama
 
-async def handle_chat(question:str, context:list[str]|None = None) -> str: 
+async def handle_chat(question: str, context: list[str] | None = None) -> str:
     cont = ""
-    if(context):
-        cont = "\n".join(req.context)
+    if context:
+        cont = "\n".join(context)
     prompt = f"""
     Context:
-    {context}
+    {cont}
 
     Question:
-    {req.question}
+    {question}
 
     Answer clearly.
     """

@@ -1,5 +1,5 @@
 
-from services.ollama_ai_model import ask_ollama
+from .ollama_ai_model import ask_ollama
 
 
 

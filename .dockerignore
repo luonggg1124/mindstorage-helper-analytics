@@ -1,0 +1,37 @@
+.git
+.gitignore
+
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+.venv/
+venv/
+ENV/
+env/
+
+*.log
+.DS_Store
+
+dist/
+build/
+*.egg-info/
+
+.idea/
+.vscode/
+
+# Local data / artifacts
+data/
+logs/
+models/
+
+# Docker artifacts
+Dockerfile
+docker-compose*.yml

@@ -1,11 +1,11 @@
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
-from src.services import summarize
+from ..request.text import TextRequest
+from ...services.summarize import summarize_text
 
 router = APIRouter(prefix="/summarize", tags=["summarize"])
 
-
-@router.post("/")
-async def summarize_text(text: str):
-    summary = await summarize.summarize_text(text)
+@router.post("")
+async def summarize(req: TextRequest):
+    summary = await summarize_text(req.text)
     return JSONResponse(status_code=201, content={"summary": summary})

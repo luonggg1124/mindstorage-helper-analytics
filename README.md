@@ -1,3 +1,5 @@
+<!-- docker build -t ai-analytics:latest . -->
+<!-- docker run -d -p 9000:9000 ai-analytics:latest -->
 # AI Analytics API
 
 Dự án API cung cấp các dịch vụ phân tích và xử lý văn bản sử dụng trí tuệ nhân tạo, bao gồm chat, embedding, tóm tắt và tạo tag.

@@ -1,9 +1,9 @@
 from fastapi import FastAPI
 from fastapi.responses import JSONResponse
-from https.api.chat import router as chat_router
-from https.api.embedding import router as embedding_router
-from https.api.summarize import router as summarize_router
-from https.api.tag import router as tag_router
+from .https.api.chat import router as chat_router
+from .https.api.embedding import router as embedding_router
+from .https.api.summarize import router as summarize_router
+from .https.api.tag import router as tag_router
 
 
 app = FastAPI()
