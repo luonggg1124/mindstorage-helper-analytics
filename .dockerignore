@@ -33,5 +33,5 @@ logs/
 models/
 
 # Docker artifacts
-Dockerfile
+e
 docker-compose*.yml
