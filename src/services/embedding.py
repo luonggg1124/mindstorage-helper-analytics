@@ -1,8 +1,10 @@
 
-from sentence_transformers import SentenceTransformer
+from fastembed import TextEmbedding
 
-model = SentenceTransformer('all-MiniLM-L6-v2')
+model = TextEmbedding(
+    model_name="sentence-transformers/all-MiniLM-L6-v2"
+)
 
 async def create_embedding(text: str) -> list[float]:
-    vector = model.encode(text)
+    vector = next(model.embed([text]))
     return vector.tolist()
